@@ -10,6 +10,8 @@ We apply a resolution restore model for spatial resolution improvement from x4 d
 
 ## Method
 ![alt text](figure/figure1.png)
+
+## Result
 ### Model 1: Image Resolution restore model
 ![alt text](figure/figure2-1.png)
 
