@@ -21,14 +21,27 @@ We apply a resolution restore model for spatial resolution improvement from x4 d
 
 
 ## Environment
-### 
+### Create Conda ENV
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --master_port=4321 drct/train.py -opt options/train/train_DRCT_SRx2_from_scratch.yml --launcher pytorch
+conda create -n txm_sr python=3.10
+conda activate txm_sr
+```
+### Installation and check
+```
+# pytorch
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
+python -c 'import torch;print(torch.cuda.is_available(),torch.cuda.device_count())'
+
+# BasicSR
+git clone https://github.com/XPixelGroup/BasicSR.git
+cd Basicsr
+pip install -r requirements.txt
+python setup.py develop
 ```
 
 ## How to Inference
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --master_port=4321 drct/train.py -opt options/train/train_DRCT_SRx2_from_scratch.yml --launcher pytorch
+python inference/inference_swinir.py --task real_sr --input datasets/Set5/LRbicx4 --patch_size 64 --model_path experiments/pretrained_models/SwinIR/001_classicalSR_DIV2K_s64w8_SwinIR-M_x4.pth --output results/SwinIR_SRX4_DIV2K/Set5
 ```
 ## Citations
 If our work is helpful to your reaearch, please kindly cite our work. Thank!
