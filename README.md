@@ -40,8 +40,12 @@ python setup.py develop
 ```
 
 ## How to Inference
+### pretrain model
+- [Image Resolution restore model](https://drive.google.com/drive/folders/1d5rl55zROl7_eA-w3XRvixB25QI7Ngrm?usp=drive_link)
+- [Model 2: Sparse-view reconstruction model](https://drive.google.com/drive/folders/1nL9daBs-m3xi-CdC4yyi19fN5hOWNRpp?usp=drive_link)
+- [Colab demo code](https://colab.research.google.com/drive/1nnDG4-a0yHmAuymWFbqpqE61kZEtmo2y?usp=drive_link)
 ```
-python inference/inference_swinir.py --task real_sr --input datasets/Set5/LRbicx4 --patch_size 64 --model_path experiments/pretrained_models/SwinIR/001_classicalSR_DIV2K_s64w8_SwinIR-M_x4.pth --output results/SwinIR_SRX4_DIV2K/Set5
+python inference/inference_swinir.py --task real_sr --input {dataset_path} --patch_size 64 --model_path {model_path} --output {output_path}
 ```
 ## Citations
 If our work is helpful to your reaearch, please kindly cite our work. Thank!
