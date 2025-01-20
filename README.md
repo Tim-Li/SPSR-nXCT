@@ -11,14 +11,13 @@ We apply a resolution restore model for spatial resolution improvement from x4 d
 ## Method
 ![alt text](figure/figure1.png)
 ### Model 1: Image Resolution restore model
+![alt text](figure/figure2-1.png)
 
-
+![alt text](figure/figure2-2.png)
 
 
 ### Model 2: Sparse-view reconstruction model
-
-
-
+![alt text](figure/figure3-1.png)
 
 
 ## Environment
