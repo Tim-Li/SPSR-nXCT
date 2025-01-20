@@ -41,7 +41,7 @@ python setup.py develop
 
 ## How to Inference
 ### pretrain model
-- [Image Resolution restore model](https://drive.google.com/drive/folders/1d5rl55zROl7_eA-w3XRvixB25QI7Ngrm?usp=drive_link)
+- [Model 1: Image Resolution restore model](https://drive.google.com/drive/folders/1d5rl55zROl7_eA-w3XRvixB25QI7Ngrm?usp=drive_link)
 - [Model 2: Sparse-view reconstruction model](https://drive.google.com/drive/folders/1nL9daBs-m3xi-CdC4yyi19fN5hOWNRpp?usp=drive_link)
 - [Colab demo code](https://colab.research.google.com/drive/1nnDG4-a0yHmAuymWFbqpqE61kZEtmo2y?usp=drive_link)
 ```
