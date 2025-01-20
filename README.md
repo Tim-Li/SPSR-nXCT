@@ -8,8 +8,8 @@ We introduce a method to enhance the temporal resolution of XCT without increasi
 
 We apply a resolution restore model for spatial resolution improvement from x4 downsampled images, followed by sparse-view reconstruction using Filtered Back Projection at 5-degree intervals. This is enhanced by a sparse-view restore model to further reduce streak artifacts. Tested with simulation data and Taiwan Light Source TLS 01B1 data, our method significantly improves image quality, reduces tomography scan time by about 80 times, boosts equipment efficiency, and facilitates the study of dynamic 3D structures.
 
-## Method
-![alt text](figure/figure1.png)
+<!-- ## Method
+![alt text](figure/figure1.png) -->
 
 ## Result
 ### Model 1: Image Resolution restore model
