@@ -1,7 +1,9 @@
 # A-Strategy-for-Improving-Temporal-Resolution-in-X-ray-Tomography-Using-Deep-Learning
-Tai-Yue Li and Chun-Chieh Wang
+Tai-Yue Li<sup>1,2</sup>, Yi-Feng Huang<sup>1</sup> and Chun-Chieh Wang<sup>1</sup> 
 
-TLS BL01B1 beamline, National Synchrotron Radiation Research Center, Hsinchu, Taiwan
+1. National Synchrotron Radiation Research Center, Hsinchu, Taiwan
+2. National Center for HPC, Narlabs, Hsinchu, Taiwan
+
 
 ## Overview
 We introduce a method to enhance the temporal resolution of XCT without increasing radiation intensity by using pixel binning to shorten exposure times and sparse-view acquisition to reduce image count. Our approach utilizes deep learning models based on SwinIR architecture to correct resolution degradation and minimize streak artifacts in sparse-view reconstructions. 
@@ -49,6 +51,14 @@ python setup.py develop
 ```
 python inference/inference_swinir.py --task real_sr --input {dataset_path} --patch_size 64 --model_path {model_path} --output {output_path}
 ```
+## How to Train
+### Model 1
+```
+```
+### Model 2
+```
+```
+
 ## Citations
 If our work is helpful to your reaearch, please kindly cite our work. Thank!
 
